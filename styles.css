@@ -10,6 +10,7 @@ body {
   background-color: rgb(253, 248, 255);
   overflow-x: hidden;
   font-family: "Roboto", sans-serif;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -59,7 +60,7 @@ li {
 a {
   color: rgb(191, 53, 255);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 h2 {
   font-size: 3rem;
