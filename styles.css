@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(253, 248, 255);
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-family: sans-serif;
+  text-align: center;
+  padding: 10px;
+  font-size: 7rem;
+  color: transparent;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 219, 60),
+    rgb(255, 0, 195),
+    rgb(130, 50, 199),
+    rgb(255, 20, 149),
+    rgb(235, 166, 166)
+  );
+  -webkit-background-clip: text;
+  animation: animate 10s linear infinite;
+  background-size: 1000%;
+}
+@keyframes animate {
+  0% {
+    background-position: 0% 100%;
+  }
+  50% {
+    background-position: 100% 0%;
+  }
+  100% {
+    background-position: 0% 100%;
+  }
+}
+
+p {
+  margin: 10px;
+  font-size: 2.2rem;
+}
+ul {
+  margin: 10px;
+  font-size: 2.3rem;
+}
+li {
+  list-style-type: none;
+  font-size: 2.2rem;
+  margin: 10px;
+}
+a {
+  color: rgb(191, 53, 255);
+  text-decoration: none;
+  font-size: 2rem;
+}
+h2 {
+  font-size: 3rem;
+  margin: 10px;
+}
+.img {
+  width: calc(100% - 65%);
+  height: calc(100% - 10%);
+  margin-right: 16px;
+}
+img {
+  margin: 2rem;
+}
+.parallax {
+  /* The image used */
+  background-image: url("soundtrap.jpg");
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-filler {
+  min-height: 100vh;
+  background: linear-gradient(80deg, #dab5ec 50%, #ffffff 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.parallax-filler-2 {
+  min-height: 500px;
+  background: linear-gradient(80deg, #ffffff 50%, #dab5ec 50%);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+  min-height: 100vh;
+}
+.contact {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+}
+.text {
+  max-width: calc(700px - 32px);
+  font-size: 1.3rem;
+  line-height: 1.125;
+  margin-right: 5rem;
+}
+.skills {
+  text-align: left;
+  border-left: solid black 1px;
+  padding: 5px;
+  width: calc(700px - 50px);
+  padding-left: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  text-align: center;
+}
+.projects-container {
+  display: flex;
+  flex-direction: row;
+}
+.previous-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.side-meny {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  font-size: 1.5rem;
+}
+
+/* tablet */
+@media only screen and (max-width: 1280px) {
+  .projects-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .text {
+    width: calc(700px - 32px);
+    line-height: 1.125;
+    margin-right: none;
+    margin: 2rem;
+  }
+  .skills {
+    margin: 2rem;
+    text-align: center;
+    padding-left: none;
+    border-left: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section {
+    min-height: 70vh;
+  }
+  .parallax {
+    min-height: 200px;
+    background-size: 500px;
+    background-color: #dab5ec;
+    width: 705px;
+  }
+  .parallax-filler-2 {
+    min-height: 200px;
+  }
+  .text {
+    width: 400px;
+  }
+  .skills {
+    width: 400px;
+  }
+  .github {
+    width: 30px;
+    height: 30px;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+
+  p {
+    margin: 5px;
+    font-size: 1rem;
+  }
+  ul {
+    margin: 5px;
+    font-size: 1.2rem;
+  }
+  li {
+    list-style-type: none;
+    font-size: 1rem;
+    margin: 5px;
+  }
+  a {
+    color: rgb(191, 53, 255);
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    margin: 5px;
+  }
+}
